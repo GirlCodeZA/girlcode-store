@@ -1,12 +1,14 @@
 import './App.css'
+import TopBar from './components/TopBar'
 
 function App() {
 
-  return (
-    <>
-      Girlcode Store
-    </>
-  )
+    return (
+        <>
+            <TopBar />
+            Girlcode Store
+        </>
+    )
 }
 
 export default App
