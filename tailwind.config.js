@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+        backgroundImage: {
+            "hero-section": "url('/src/assets/hero-background.jpg')"
+        },
+        colors: {
+            'girlcode-pink': "#e94154"
+        }
+    },
   },
   plugins: [],
 }
