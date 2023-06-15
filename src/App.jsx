@@ -1,19 +1,16 @@
+import { Route, Routes} from 'react-router-dom'
 import './App.css'
-import TopBar from './components/TopBar'
-import NavBar from './components/NavBar'
-import HeroSection from './components/HeroSection'
-import CategorySection from './components/CategorySection'
-import DealsSection from './components/DealsSection'
+import Home from './pages/Home'
+import Category from './pages/Category'
 
 function App() {
 
     return (
         <>
-            <TopBar />
-            <NavBar />
-            <HeroSection />
-            <CategorySection />
-            <DealsSection />
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/category' element={<Category />} />
+            </Routes>
         </>
     )
 }

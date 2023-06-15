@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom"
 import logo from "../assets/logo-black.png"
 
 const NavBar = () => {
     return (
         <div className="nav-bar py-3">
             <div className="container mx-auto flex justify-between items-center">
-                <a href="#" className="w-44 block">
+                <Link to="/" className="w-44 block">
                     <img src={logo} alt="Girlcode Store Logo" />
-                </a>
+                </Link>
                 <ul className="flex gap-6">
                     <li>
                         <a href="#" className="font-bold">Categories</a>
