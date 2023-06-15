@@ -1,6 +1,5 @@
 import ProductItem from "./ProductItem";
 
-
 const DealsSection = () => {
     return (
         <section className="pt-20">
