@@ -14,9 +14,7 @@ body {
 
 .top-bar {
     background-color: #e94154;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 72px;
+    padding: 10px 0;
 }
 
 .bar-contact a {
