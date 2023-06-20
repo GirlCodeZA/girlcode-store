@@ -5,27 +5,33 @@ const CategorySection = () => {
     const CatList = [
         {
             name: "Furniture",
-            path: "/category/furniture"
+            path: "/category/furniture",
+            catImg: furnImg
         },
         {
             name: "Hand Bag",
-            path: "/category/hand-bag"
+            path: "/category/hand-bag",
+            catImg: furnImg
         },
         {
             name: "Books",
-            path: "/category/books"
+            path: "/category/books",
+            catImg: furnImg
         },
         {
             name: "Tech",
-            path: "/category/tech"
+            path: "/category/tech",
+            catImg: furnImg
         },
         {
             name: "Sneakers",
-            path: "/category/sneaker"
+            path: "/category/sneaker",
+            catImg: furnImg
         },
         {
             name: "Travel",
-            path: "/category"
+            path: "/category",
+            catImg: furnImg
         }
     ]
 
@@ -38,7 +44,7 @@ const CategorySection = () => {
                 <div className="grid grid-cols-6 gap-8">
                     { CatList.map(cat => (
                         <Link to={cat.path} className="rounded-xl overflow-hidden relative" key={cat.name}>
-                            <img src={furnImg} alt={`${cat.name} Category`}/>
+                            <img src={cat.catImg} alt={`${cat.name} Category`}/>
                             <h3 className="absolute top-3 left-1/2 text-2xl font-extrabold text-girlcode-pink -translate-x-1/2">{cat.name}</h3>
                         </Link>
                     )) }
