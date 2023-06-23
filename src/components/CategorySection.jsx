@@ -5,7 +5,7 @@ const CategorySection = () => {
     const [catList, setCatList] = useState([])
 
     useEffect(() => {
-        fetch(`http://127.0.0.1:5000/categories`)
+        fetch(`${import.meta.env.VITE_API_URL}/categories`)
             .then(resp => resp.json())
             .then(resp => {
                 setCatList(resp.categories)
@@ -25,7 +25,7 @@ const CategorySection = () => {
                 <div className="grid grid-cols-6 gap-8">
                     { catList.map(cat => (
                         <Link to={`/category/${cat.slug}`} className="rounded-xl overflow-hidden relative" key={cat.id}>
-                            <img src={cat.img} alt={`${cat.name} Category`}/>
+                            <img src={`${import.meta.env.VITE_API_URL}/image/${cat.img}`} alt={`${cat.name} Category`}/>
                             <h3 className="absolute top-3 left-1/2 text-2xl font-extrabold text-girlcode-pink -translate-x-1/2">{cat.name}</h3>
                         </Link>
                     )) }
