@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
         backgroundImage: {
-            "hero-section": "url('/src/assets/hero-background.jpg')"
+            "hero-section": "url('/src/assets/hero-background.jpg')",
+            "page-header": "url('/src/assets/cat-page-header.jpg')"
         },
         colors: {
             'girlcode-pink': "#e94154"
