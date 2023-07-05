@@ -30,7 +30,7 @@ const NavBar = () => {
                         </button>
                     </form>
                     <a href="" className="font-bold"><span className="material-symbols-outlined align-middle">person</span> Account</a>
-                    <a href="" className="font-bold"><span className="material-symbols-outlined align-middle">shopping_cart</span> Cart</a>
+                    <Link to="/cart" className="font-bold"><span className="material-symbols-outlined align-middle">shopping_cart</span> Cart</Link>
                 </div>
             </div>
 
