@@ -9,7 +9,6 @@ const DealsSection = () => {
             .then(resp => resp.json())
             .then(resp => {
                 setProdList(resp.products)
-                console.log(resp)
             })
             .catch(error => {
                 console.log(error)
