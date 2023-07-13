@@ -12,7 +12,7 @@ const Checkout = () => {
 
         formData.append('cart', cartArray)
 
-        fetch(`${import.meta.env.VITE_API_URL}/submit_cart`, {
+        fetch(`${import.meta.env.VITE_API_URL}/submit_checkout`, {
             method: "POST",
             body: formData
         }).then(resp => {
