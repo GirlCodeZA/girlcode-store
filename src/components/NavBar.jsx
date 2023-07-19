@@ -8,7 +8,7 @@ const NavBar = () => {
                 <Link to="/" className="w-44 block">
                     <img src={logo} alt="Girlcode Store Logo" />
                 </Link>
-                <ul className="flex gap-6">
+                <ul className="hidden xl:flex gap-6">
                     <li>
                         <a href="#" className="font-bold">Categories</a>
                     </li>
@@ -22,8 +22,8 @@ const NavBar = () => {
                         <a href="#" className="font-bold">Delivery</a>
                     </li>
                 </ul>
-                <div className="flex gap-6 items-center">
-                    <form className="bg-slate-200 w-fit py-1.5 px-5 rounded-3xl">
+                <div className="hidden sm:flex gap-6 items-center">
+                    <form className="hidden lg:flex bg-slate-200 w-fit py-1.5 px-5 rounded-3xl">
                         <input type="text" name="search" placeholder="Search Products" className="outline-0 bg-transparent" />
                         <button>
                             <span className="material-symbols-outlined align-middle">search</span>
@@ -31,6 +31,9 @@ const NavBar = () => {
                     </form>
                     <a href="" className="font-bold"><span className="material-symbols-outlined align-middle">person</span> Account</a>
                     <Link to="/cart" className="font-bold"><span className="material-symbols-outlined align-middle">shopping_cart</span> Cart</Link>
+                </div>
+                <div className="xl:hidden">
+                    <span className="material-symbols-outlined">menu</span>
                 </div>
             </div>
 

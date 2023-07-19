@@ -22,7 +22,7 @@ const CategorySection = () => {
                 <div className="mb-9">
                     <h2 className="text-2xl font-extrabold">Shop Our Top Categories</h2>
                 </div>
-                <div className="grid grid-cols-6 gap-8">
+                <div className="grid grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-8">
                     { catList.map(cat => (
                         <Link to={`/category/${cat.slug}`} className="rounded-xl overflow-hidden relative" key={cat.id}>
                             <img src={`${import.meta.env.VITE_API_URL}/image/${cat.img}`} alt={`${cat.name} Category`}/>
